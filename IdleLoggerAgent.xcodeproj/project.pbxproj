@@ -11,11 +11,12 @@
 		383705C21B948E7700271DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383705C11B948E7700271DD6 /* Assets.xcassets */; };
 		383705D01B948E7700271DD6 /* IdleLoggerAgentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 383705CF1B948E7700271DD6 /* IdleLoggerAgentTests.m */; };
 		383705DB1B948E7700271DD6 /* IdleLoggerAgentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 383705DA1B948E7700271DD6 /* IdleLoggerAgentUITests.m */; };
-		383705EA1B948EAF00271DD6 /* IdleTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 383705E91B948EAF00271DD6 /* IdleTime.m */; settings = {ASSET_TAGS = (); }; };
-		383705ED1B948EBC00271DD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 383705EC1B948EBC00271DD6 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		383705EA1B948EAF00271DD6 /* IdleTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 383705E91B948EAF00271DD6 /* IdleTime.m */; };
+		383705ED1B948EBC00271DD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 383705EC1B948EBC00271DD6 /* AppDelegate.m */; };
 		383705EF1B948F4100271DD6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383705EE1B948F4100271DD6 /* IOKit.framework */; };
 		383705F11B948F4900271DD6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383705F01B948F4900271DD6 /* CoreServices.framework */; };
-		383705F31B948F8C00271DD6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383705F21B948F8C00271DD6 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
+		383705F31B948F8C00271DD6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383705F21B948F8C00271DD6 /* MainMenu.xib */; };
+		C9F5AE5F1E3822DD006A8C99 /* IdleLoggerAgent.iconset in Resources */ = {isa = PBXBuildFile; fileRef = C9F5AE5E1E3822DD006A8C99 /* IdleLoggerAgent.iconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		383705EE1B948F4100271DD6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		383705F01B948F4900271DD6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		383705F21B948F8C00271DD6 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = ../MainMenu.xib; sourceTree = "<group>"; };
+		C9F5AE5E1E3822DD006A8C99 /* IdleLoggerAgent.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = IdleLoggerAgent.iconset; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		383705B71B948E7700271DD6 /* IdleLoggerAgent */ = {
 			isa = PBXGroup;
 			children = (
+				C9F5AE5E1E3822DD006A8C99 /* IdleLoggerAgent.iconset */,
 				383705EB1B948EBC00271DD6 /* AppDelegate.h */,
 				383705EC1B948EBC00271DD6 /* AppDelegate.m */,
 				383705E81B948EAF00271DD6 /* IdleTime.h */,
@@ -207,7 +210,7 @@
 		383705AD1B948E7700271DD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Jason Tratta";
 				TargetAttributes = {
 					383705B41B948E7700271DD6 = {
@@ -250,6 +253,7 @@
 			files = (
 				383705C21B948E7700271DD6 /* Assets.xcassets in Resources */,
 				383705F31B948F8C00271DD6 /* MainMenu.xib in Resources */,
+				C9F5AE5F1E3822DD006A8C99 /* IdleLoggerAgent.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +329,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -368,8 +374,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -486,6 +494,7 @@
 				383705E11B948E7700271DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		383705E21B948E7700271DD6 /* Build configuration list for PBXNativeTarget "IdleLoggerAgentTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				383705E41B948E7700271DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		383705E51B948E7700271DD6 /* Build configuration list for PBXNativeTarget "IdleLoggerAgentUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				383705E71B948E7700271DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -28,11 +28,14 @@
 //SOFTWARE.
 //
 
+//  Additional Modifications by Matthew Taylor (mtaylor@northwestern.edu)
+//  Copyright(c) 2017
+//  Shared under same license
+
 #import "AppDelegate.h"
 #include <IOKit/IOKitLib.h>
 #include <CoreServices/CoreServices.h>
 #include <stdio.h>
-
 
 
 extern OSStatus MDSendAppleEventToSystemProcess(AEEventID eventToSend);
@@ -98,7 +101,7 @@ extern OSStatus MDSendAppleEventToSystemProcess(AEEventID eventToSend);
 
 
 
-- ( void )printIdleTime: ( NSTimer * )timer
+- ( void )checkIdleTime: ( NSTimer * )timer
 {
     
     [self incrementTimer];
@@ -175,7 +178,7 @@ extern OSStatus MDSendAppleEventToSystemProcess(AEEventID eventToSend);
     _timer = [ NSTimer
               scheduledTimerWithTimeInterval: 1
               target:                         self
-              selector:                       @selector( printIdleTime: )
+              selector:                       @selector( checkIdleTime: )
               userInfo:                       NULL
               repeats:                        YES
               ];
